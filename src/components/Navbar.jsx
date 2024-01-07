@@ -5,7 +5,7 @@ const Navbar = () => {
       <div>
         <ul className="flex justify-start gap-5 text-xl text-white font-mono mr-12 ">
           <li className="hover:text-cyan-400">Home</li>
-          <li className="hover:text-cyan-400">Services</li>
+          <li className="hover:text-cyan-400 hover:">Services</li>
           <li className="hover:text-cyan-400">Contact</li>
           <li className="hover:text-cyan-400">Help</li>
         </ul>

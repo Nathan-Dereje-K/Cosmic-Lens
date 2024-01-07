@@ -9,6 +9,7 @@ function App() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   const [date, setDate] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const fetchImage = async () => {
     try {
@@ -22,6 +23,7 @@ function App() {
       setTitle(data.title);
       setDesc(data.explanation);
       setDate(data.date);
+      setIsLoading(false);
     } catch (error) {
       console.error("Error fetching image:", error);
     }
@@ -34,7 +36,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero image={image} title={title} desc={desc} date={date} />
+      {isLoading ? (
+        <h3 className="text-blue-700 font-serif text-4xl py-10 px-10">
+          Loading ...
+        </h3>
+      ) : (
+        <Hero image={image} title={title} desc={desc} date={date} />
+      )}
     </>
   );
 }
