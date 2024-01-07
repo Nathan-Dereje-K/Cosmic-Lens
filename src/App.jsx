@@ -1,3 +1,4 @@
+import Filler from "./components/Filler";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
@@ -43,6 +44,7 @@ function App() {
       ) : (
         <Hero image={image} title={title} desc={desc} date={date} />
       )}
+      {isLoading ? "" : <Filler />}
     </>
   );
 }
