@@ -17,14 +17,13 @@ const Hero = ({ image, title, desc, date }) => {
           src="https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
           alt="Milky-way sky night picture"
         />
-
         <div>
           <h2
             className="lg:text-6xl md:text-5xl font-semibold text-white leading-tight  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
             data-aos="fade-left "
             data-aos-duration="2000"
           >
-            Dive into the universe
+            Explore the universe
           </h2>
         </div>
       </div>

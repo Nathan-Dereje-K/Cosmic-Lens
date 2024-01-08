@@ -1,4 +1,4 @@
-import Filler from "./components/Filler";
+// import Filler from "./components/Filler";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
@@ -44,7 +44,17 @@ function App() {
       ) : (
         <Hero image={image} title={title} desc={desc} date={date} />
       )}
-      {isLoading ? "" : <Filler />}
+      <h2 className="md:text-4xl lg:text-5xl text-4xl font-serif font-bold mt-5">
+        Discover
+      </h2>
+      <hr />
+      <br />
+      {/* <div className="flex gap-5">
+        <Filler />
+        <Filler />
+        <Filler />
+        <Filler />
+      </div> */}
     </>
   );
 }

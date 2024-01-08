@@ -8,13 +8,13 @@ const Card = ({ image, title, desc, date }) => {
           <img
             data-aos="fade-up "
             data-aos-duration="3000"
-            className="w-full max-h-[500px] object-cover"
+            className="w-full ml-3 rounded-lg max-h-[500px] object-cover"
             src={image}
             alt="Image of the day"
           />
         </div>
         {/* paragraph */}
-        <div className="md:py-6 py-6 ml-5">
+        <div className="md:py-6 py-6 ml-5 mt-5">
           <h3 className="text-2xl font-semibold text-indigo-700 leading-tight mt-4 ">
             {title}
           </h3>
