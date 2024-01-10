@@ -51,13 +51,6 @@ function App() {
         </h2>
       )}
       <hr />
-      <br />
-      {/* <div className="flex gap-5">
-        <Filler />
-        <Filler />
-        <Filler />
-        <Filler />
-      </div> */}
     </>
   );
 }
