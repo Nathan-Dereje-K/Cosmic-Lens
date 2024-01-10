@@ -19,7 +19,6 @@ function App() {
       );
       const data = await response.json();
 
-      // Assuming the API response has an 'imageUrl' field
       setImage(data.url);
       setTitle(data.title);
       setDesc(data.explanation);
@@ -44,9 +43,13 @@ function App() {
       ) : (
         <Hero image={image} title={title} desc={desc} date={date} />
       )}
-      <h2 className="md:text-4xl lg:text-5xl text-4xl font-serif font-bold mt-5">
-        Discover
-      </h2>
+      {isLoading ? (
+        ""
+      ) : (
+        <h2 className="md:text-4xl lg:text-5xl text-4xl font-serif font-bold mt-5">
+          Discover
+        </h2>
+      )}
       <hr />
       <br />
       {/* <div className="flex gap-5">
