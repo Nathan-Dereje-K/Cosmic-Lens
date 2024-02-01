@@ -25,7 +25,7 @@ function Home() {
       setDate(data.date);
       setIsLoading(false);
     } catch (error) {
-      console.error("Error fetching image:", error);
+      console.error("Error fetching image!", error);
     }
   };
 
