@@ -7,7 +7,7 @@ import Card from "./Card";
 const Hero = ({ image, title, desc, date }) => {
   useEffect(() => {
     AOS.init();
-  });
+  }, []);
 
   return (
     <>
