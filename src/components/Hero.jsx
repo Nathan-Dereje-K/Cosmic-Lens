@@ -11,7 +11,7 @@ const Hero = ({ image, title, desc, date }) => {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative b">
         <img
           className="w-full relative"
           src="https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg"
