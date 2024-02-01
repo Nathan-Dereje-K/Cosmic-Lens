@@ -1,50 +1,22 @@
-import Filler from "./components/Filler";
-import Hero from "./components/Hero";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import { useEffect, useState } from "react";
-
-// 9oxy8bhwnEXgbxhrTDXngfEo0b9AdFo1uMEqIggI
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 function App() {
-  const [image, setImage] = useState(null);
-  const [title, setTitle] = useState("");
-  const [desc, setDesc] = useState("");
-  const [date, setDate] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  const fetchImage = async () => {
-    try {
-      const response = await fetch(
-        "https://api.nasa.gov/planetary/apod?api_key=9oxy8bhwnEXgbxhrTDXngfEo0b9AdFo1uMEqIggI"
-      );
-      const data = await response.json();
-
-      // Assuming the API response has an 'imageUrl' field
-      setImage(data.url);
-      setTitle(data.title);
-      setDesc(data.explanation);
-      setDate(data.date);
-      setIsLoading(false);
-    } catch (error) {
-      console.error("Error fetching image:", error);
-    }
-  };
-
-  useEffect(() => {
-    fetchImage();
-  }, []);
-
   return (
     <>
-      <Navbar />
-      {isLoading ? (
-        <h3 className="text-blue-700 font-serif text-4xl py-10 px-10">
-          Loading ...
-        </h3>
-      ) : (
-        <Hero image={image} title={title} desc={desc} date={date} />
-      )}
-      {isLoading ? "" : <Filler />}
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
     </>
   );
 }
