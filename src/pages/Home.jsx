@@ -25,7 +25,7 @@ function Home() {
       setDate(data.date);
       setIsLoading(false);
     } catch (error) {
-      console.error("Error fetching image!", error);
+      console.error("Error fetching image:", error);
     }
   };
 
@@ -43,7 +43,7 @@ function Home() {
       {isLoading ? (
         ""
       ) : (
-        <h2 className="md:text-4xl lg:text-5xl text-4xl font-serif font-bold mt-5">
+        <h2 className="md:text-4xl text-[#101431] lg:text-5xl text-4xl font-serif font-bold mt-5">
           Discover
         </h2>
       )}

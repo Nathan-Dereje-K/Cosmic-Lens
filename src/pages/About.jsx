@@ -33,7 +33,7 @@ const About = () => {
             your curiosity and ignite your sense of wonder about the mysteries
             of the universe.
           </p>
-          <p className="mt-4" data-aos="fade-left " data-aos-duration="30Up00">
+          <p className="mt-4" data-aos="fade-left " data-aos-duration="3000">
             Join us on this interstellar odyssey as we collectively unravel the
             enigmatic secrets of the cosmos. As we navigate through the
             celestial wonders together, brace yourself for a cosmic adventure

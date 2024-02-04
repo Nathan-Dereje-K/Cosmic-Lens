@@ -11,7 +11,7 @@ const Hero = ({ image, title, desc, date }) => {
 
   return (
     <>
-      <div className="relative b">
+      <div className="relative">
         <img
           className="w-full relative"
           src="https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg"
@@ -21,7 +21,7 @@ const Hero = ({ image, title, desc, date }) => {
           <h2
             className="lg:text-6xl md:text-5xl font-mono text-white leading-tight  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
             data-aos="fade-left "
-            data-aos-duration="2000"
+            data-aos-duration="2500"
           >
             Explore the universe 🚀
           </h2>
