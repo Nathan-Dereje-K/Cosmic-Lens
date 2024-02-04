@@ -26,11 +26,11 @@ const Contact = () => {
         alt="Earth from space picture"
       />
       <h2
-        className="text-4xl lg:text-5xl md:text-5xl font-mono text-white leading-tight  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
+        className="text-4xl lg:text-5xl md:text-5xl font-mono text-white absolute top-1/2 left-1/2 transform -translate-x-1/2  "
         data-aos="fade-up "
         data-aos-duration="2000"
       >
-        Contact us here ... 🚀
+        Contact us here . . .🚀
       </h2>
       <h2
         data-aos="fade-up "

@@ -6,17 +6,19 @@ const About = () => {
     AOS.init();
   }, []);
   return (
-    <div className=" ">
+    <div>
       <div className="absolute ">
         <img
-          className="h-screen w-screen"
+          className="h-screen w-screen bg-cover"
           src="https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg"
           alt="Another space image"
         />
       </div>
-      <div className="relative text-white flex-col justify-center items-center py-16 px-16">
-        <h1 className="text-3xl font-bold mb-4">About Our Cosmic Adventure</h1>
-        <div className="text-lg mt-4 font-mono">
+      <div className="relative text-white flex-col justify-center items-center py-16 px-13">
+        <h1 className="text-5xl font-bold mb-4 ml-56 px-80">
+          About Our Cosmic Adventure
+        </h1>
+        <div className="text-lg  mt-16 font-mono m-48 ">
           <p data-aos="fade-left " data-aos-duration="1000">
             Welcome to our cosmic playground! 🚀 Embark on a captivating journey
             with us as we delve deep into the vast repository of data provided
