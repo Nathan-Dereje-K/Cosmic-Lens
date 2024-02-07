@@ -19,7 +19,7 @@ const Hero = ({ image, title, desc, date }) => {
         />
         <div>
           <h2
-            className="lg:text-6xl md:text-5xl font-mono text-white leading-tight  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
+            className="text-2xl lg:text-6xl md:text-3xl font-mono text-white leading-tight  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
             data-aos="fade-left "
             data-aos-duration="2500"
           >

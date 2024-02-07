@@ -2,6 +2,7 @@
 import Hero from "../components/Hero";
 import { useEffect, useState } from "react";
 import Spinner from "../components/Spinner";
+import AstroCard from "../components/AstroCard";
 
 // 9oxy8bhwnEXgbxhrTDXngfEo0b9AdFo1uMEqIggI
 
@@ -48,6 +49,12 @@ function Home() {
         </h2>
       )}
       <hr />
+      <div className="w-full m-6 gap-5 flex justify-evenly ">
+        <AstroCard />
+        <AstroCard />
+        <AstroCard />
+        <AstroCard />
+      </div>
     </>
   );
 }

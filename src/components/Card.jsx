@@ -3,6 +3,9 @@ const Card = ({ image, title, desc, date }) => {
   const dummy_URI = "https://placehold.co/600x400";
   return (
     <>
+      <h2 className="m-5 font-semibold text-[#101431] text-2xl md:text-3xl lg:text-4xl">
+        Grab some on your way
+      </h2>
       <div className="lg:flex gap-3 py-3 ">
         {/* image */}
         <div className="md:shrink-0">
