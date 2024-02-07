@@ -1,15 +1,19 @@
 // eslint-disable-next-line react/prop-types
 const Card = ({ image, title, desc, date }) => {
+  const dummy_URI = "https://placehold.co/600x400";
   return (
     <>
+      <h2 className="m-5 font-semibold text-[#101431] text-2xl md:text-3xl lg:text-4xl">
+        Grab some on your way
+      </h2>
       <div className="lg:flex gap-3 py-3 ">
         {/* image */}
         <div className="md:shrink-0">
           <img
             data-aos="fade-up "
-            data-aos-duration="3000"
+            data-aos-duration="2500"
             className="w-full ml-3 rounded-lg max-h-[500px] object-cover"
-            src={image}
+            src={image ? image : dummy_URI}
             alt="Image of the day"
           />
         </div>
@@ -19,17 +23,18 @@ const Card = ({ image, title, desc, date }) => {
             {title}
           </h3>
           <p
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="3000"
+            data-aos="fade-up"
+            data-aos-duration="2500"
             className="text-base text-gray-700 leading-relaxed py-4 mt-4"
           >
             {desc}
           </p>
-          <h4 className="text-lg font-medium text-gray-500 mt-2">{date}</h4>
-          <h4 className="text-lg font-medium text-gray-500 mt-2">
-            # Knowlage of the day
-          </h4>
+          <div data-aos="fade-down" data-aos-duration="2000">
+            <h4 className="text-lg font-medium text-gray-500 mt-2">{date}</h4>
+            <h4 className="text-lg font-medium text-gray-500 mt-2">
+              # Knowlage of the day
+            </h4>
+          </div>
         </div>
       </div>
     </>

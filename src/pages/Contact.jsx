@@ -26,11 +26,18 @@ const Contact = () => {
         alt="Earth from space picture"
       />
       <h2
-        data-aos="fade-left "
+        className="text-4xl lg:text-5xl md:text-5xl font-mono text-white absolute top-1/2 left-1/2 transform -translate-x-1/2  "
+        data-aos="fade-up "
         data-aos-duration="2000"
-        className="text-5xl font-bold font-sans  mb-4 ml-3 mt-3  text-white"
       >
-        Contact Us
+        Contact us here . . .🚀
+      </h2>
+      <h2
+        data-aos="fade-up "
+        data-aos-duration="2500"
+        className="text-5xl font-bold font-sans  mb-4 ml-3 mt-3  text-[#101431]"
+      >
+        Tells us your journey
       </h2>
       <form
         data-aos="fade-right "
@@ -48,7 +55,7 @@ const Contact = () => {
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="mt-1 p-2 w-full border rounded-md"
+            className="mt-1 p-2 w-full border rounded-md text-[#101431]"
             placeholder="Enter your name"
             required
           />
@@ -64,7 +71,7 @@ const Contact = () => {
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="mt-1 p-2 w-full border rounded-md"
+            className="mt-1 p-2 w-full border rounded-md text-[#101431]"
             placeholder="Enter your email"
             required
           />
@@ -80,7 +87,7 @@ const Contact = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             rows="4"
-            className="mt-1 p-2 w-full border rounded-md"
+            className="text-[#101431] mt-1 p-2 w-full border rounded-md"
             placeholder="Enter your message"
             required
           ></textarea>
