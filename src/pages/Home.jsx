@@ -39,22 +39,44 @@ function Home() {
       {isLoading ? (
         <Spinner />
       ) : (
-        <Hero image={image} title={title} desc={desc} date={date} />
+        <>
+          <Hero image={image} title={title} desc={desc} date={date} />
+          <h2 className="md:text-4xl text-[#101431] lg:text-5xl text-4xl font-serif font-bold mt-5">
+            Discover
+          </h2>
+          <hr />
+          <div className="w-full m-6 gap-5 flex justify-evenly">
+            <AstroCard
+              name={"Valentina Tereshkova"}
+              country={"Soviet cosmonaut"}
+              pic={
+                "https://www.nmspacemuseum.org/wp-content/uploads/2019/03/valentina-tereshkova-768x1195.jpg"
+              }
+            />
+            <AstroCard
+              name={"Neil Armstrong"}
+              country={"American cosmonaut"}
+              pic={
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/330px-Neil_Armstrong_pose.jpg"
+              }
+            />
+            <AstroCard
+              name={"Sally Ride"}
+              country={"American cosmonaut"}
+              pic={
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sally_Ride_%281984%29.jpg/330px-Sally_Ride_%281984%29.jpg"
+              }
+            />
+            <AstroCard
+              name={"Mae Jemison"}
+              country={"American cosmonaut"}
+              pic={
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Mae_Carol_Jemison.jpg/330px-Mae_Carol_Jemison.jpg"
+              }
+            />
+          </div>
+        </>
       )}
-      {isLoading ? (
-        ""
-      ) : (
-        <h2 className="md:text-4xl text-[#101431] lg:text-5xl text-4xl font-serif font-bold mt-5">
-          Discover
-        </h2>
-      )}
-      <hr />
-      <div className="w-full m-6 gap-5 flex justify-evenly ">
-        <AstroCard />
-        <AstroCard />
-        <AstroCard />
-        <AstroCard />
-      </div>
     </>
   );
 }

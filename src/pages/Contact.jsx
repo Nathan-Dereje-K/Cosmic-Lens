@@ -30,7 +30,7 @@ const Contact = () => {
         data-aos="fade-up "
         data-aos-duration="2000"
       >
-        Contact us here . . .🚀
+        Contact us here🚀
       </h2>
       <h2
         data-aos="fade-up "
